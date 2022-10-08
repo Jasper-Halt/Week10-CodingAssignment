@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <title>Make an Appointment</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <br />
+    <center><h1 style="color: #212192;">Make an Appointment:</h1></center>
+    <body class="container">
+        <br />
+        <div class="card">
+            <div class="card body">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label for="name"><strong>Name:</strong></label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                    </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="appointment-date"><strong>Appointment Date:</strong></label>
+                        <input type="date" class="form-control" id="appointment-date">
+                    </div>
+                </div>
+                <div class="row">  
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="appointment-time"><strong>Appointment Time:</strong></label>
+                            <input type="time" class="form-control" id="appointment-time">
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label for="appointment-reason"><strong>Reason for Appointment:</strong></label>
+                            <input type="text" class="form-control" id="appointment-reason" placeholder="Reason for Visit">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button id="add" class="btn btn-primary from-control">Submit</button>
+                </div>
+            </div>
+        </div>
+        <table id="make-appointment" class="table table-primary table-bordered border-dark table-striped table-hover">
+            <tr>
+                <th>Name:</th>
+                <th>Appointment Date:</th>
+                <th>Start Time:</th>
+                <th>Reason for Appointment:</th>
+                <th>Delete Appointment:</th>
+            </tr>
+
+        </table>
+        <script src="addrow.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
